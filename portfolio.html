@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devsphere Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      color: #222;
+    }
+    nav {
+      background: #0f172a;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    }
+    .buttons a {
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .primary {
+      background-color: #3b82f6;
+      color: white;
+    }
+    .secondary {
+      border: 2px solid #3b82f6;
+      color: #3b82f6;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about {$1
+  margin-bottom: 40px;
+}
+    .tech-stack {
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      border-radius: 10px;
+    }
+    .project, .dsa {
+$1
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+    .contact {
+      background: linear-gradient(to right, #d4fc79, #96e6a1);
+      border-radius: 10px;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #1d4ed8;
+    }
+    footer {$1
+  margin-bottom: 40px;
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Devsphere</strong></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#tech">Tech Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#dsa">DSA</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>I Build the Future with Code</h1>
+    <p>Full Stack MERN Developer. Problem Solver. Innovation Craftsman.</p>
+    <div class="buttons">
+      <a href="#contact" class="btn secondary">Let’s Collaborate</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 20px;">
+      <p>I am a passionate Full Stack MERN developer with a strong foundation in Data Structures and Algorithms. I specialize in building responsive, user-centric web applications that solve real-world problems. My journey began with curiosity and evolved into a mission to craft elegant code and scalable systems. I take pride in my ability to break down complex challenges into simple, maintainable solutions and work collaboratively in agile environments. With a blend of creativity, technical depth, and a hunger for innovation, I aim to make a meaningful impact through every line of code I write.</p>
+    </div>
+  </section>
+
+  <section class="tech-stack" id="tech">
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>MongoDB</li>
+      <li>Express</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>JavaScript</li>
+      <li>CSS3</li>
+      <li>HTML5</li>
+    </ul>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>Responsive portfolio built with HTML, CSS, and JavaScript. Features smooth animations, dark mode toggle, and a contact form for engagement.</p>
+    </div>
+    <div class="project">
+      <h3>E-Commerce Website</h3>
+      <p>Product page with responsive design, filtering system, and interactive shopping cart using local storage.</p>
+    </div>
+    <div class="project">
+      <h3>Business Landing Page</h3>
+      <p>Modern landing page with fluid layouts, contact forms, call-to-action buttons, and animations for improved user interaction.</p>
+    </div>
+    <div class="project">
+      <h3>Restaurant Website</h3>
+      <p>Interactive and responsive site featuring menu browsing, reservations, and adaptive navigation for all devices.</p>
+    </div>
+    <div class="project">
+      <h3>Educational Platform with Adaptive UI</h3>
+      <p>React.js based learning platform with interactive lessons, quizzes, and progress tracking optimized for mobile use.</p>
+    </div>
+    <div class="project">
+      <h3>To-Do List Web App</h3>
+      <p>Task management app supporting addition, deletion, local storage persistence, and dark mode.</p>
+    </div>
+    <div class="project">
+      <h3>Digital Clock Alarm</h3>
+      <p>Real-time clock with customizable alarm sounds and countdown timer using vanilla JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>Real-time weather information fetcher using external API. Includes dynamic backgrounds and unit conversion.</p>
+    </div>
+  </section>
+
+  <section class="dsa" id="dsa">
+    <h2>Data Structures & Algorithms</h2>
+    <p>I solve DSA problems regularly on platforms like LeetCode and GeeksforGeeks. My focus: efficient logic and clean code.</p>
+    <ul>
+      <li>500+ problems solved</li>
+      <li>Focus areas: Arrays, Graphs, Trees, DP</li>
+      <li>Competitive Coding Enthusiast</li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <div style="margin-top: 60px;"></div>
+  <footer>
+    <p>&copy; 2025 Sampath Yedla | Devsphere Portfolio</p>
+  </footer>
+</body>
+</html>
